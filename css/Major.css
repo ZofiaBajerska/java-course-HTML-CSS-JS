@@ -1,0 +1,64 @@
+#wrapper {
+    margin: 100px auto 0px auto;
+    max-width: 1000px;
+    background-color: #7c97ff;
+    padding-bottom: 0px;
+}
+body {
+    background: url("../jpg/goblin.jpg") repeat;
+    background-size: 150px;
+    margin-bottom: 0px;
+}
+
+header {
+    background-image: url("../jpg/hmm.jpg");
+    background-size: auto;
+    height: 257px;
+}
+
+.login {
+    justify-content: right;
+    padding-left: 200px;
+    padding-bottom: 0px;
+    padding-top: 210px;
+}
+
+.hidden {
+
+    display: none;
+}
+
+.visible {
+    display: unset;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li:hover {
+    text-decoration: underline overline;
+    background-color: darkviolet;
+    padding-left: 0px;
+}
+
+#gnomy2 {
+    padding-right: 10px;    
+    padding-bottom: 10px;
+}
+
+footer {
+    height: 50px;
+    background-color: darkcyan;
+    color: papayawhip;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 2px;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Zofia B.">
+        <meta name="keywords" content="Goblins">
+        <link rel="stylesheet" href="css/Major.css">
+        <link rel="stylesheet" href="css/GoblinList.css">
+        <script src="js/MainPage.js"></script>
+        <script src="js/GoblinList.js"></script>
+        <title>GoblinList</title>
+        <script src="https://kit.fontawesome.com/c970a7475a.js" crossorigin="anonymous"></script>
+
+    </head>
+    <div id="wrapper">
+        <body>
+            <header id="pasek">
+                <form id="login">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <input id="login_btn" type="submit" value="Login" onClick="login()">
+
+                </form>
+                <form class="hidden" id="logout">
+                    <label id="zalogowany" for="username">Username</label>
+                    <button onclick="logout()">Logout</button>
+                </form>
+            </header>
+            <nav>
+                <ul>
+                    <li><i class="fas fa-bed"></i> <a href="MainPage.html">Main</a></li>
+                    <li><i class="far fa-address-book"></i> <a href="GoblinList.html">Goblin List</a></li>
+                    <li><i class="fas fa-user-plus"></i> <a href="GoblinAdd.html">Add Goblin</a></li>
+                </ul>
+            </nav>
+            <div id="table">
+                <table>
+                    <caption><b>Lista Goblinów</b></caption>
+                    <thead>
+                        <tr><th>NAME</th><th>AGE</th><th>EDIT</th><th>DELETE</th></tr>
+
+                    </thead>
+                    <tbody id="goblinsBody">
+
+
+                    </tbody>
+                </table>
+            </div>
+
+            <footer id="footer" style="clear: right ">
+                &copy; Zofia B. Strona o goblinach. <br>
+                Grafiki wykorzystane przy stronie są częścią projektu:
+                "The Story of Mazu" by Angie Hu is licensed under CC BY-NC-ND 4.0
+            </footer>
+        </body>
+    </div>
+</html>

@@ -1,0 +1,46 @@
+.grid {
+    display: grid;
+    grid-gap: 20px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: crimson;
+}
+tbody tr:nth-child(even) {
+    background-color: blue;
+}
+tbody td:hover {
+    background-color: yellow;
+}
+tfoot {
+    background-color: lime;
+}
+thead{
+    background-color: forestgreen;
+    color: black;
+}
+caption{
+    text-align: center;
+    font-size: large;
+    color: #dde231;
+    background-color: #45c3ff;
+    padding: 10px;
+
+}
+td, th {
+    padding: 10px;
+}
+table, tr, td, th {
+    border: #342cdc solid 5px;
+    /*border-collapse: collapse;*/
+}
+th {
+    text-transform: uppercase;
+}
+
+table {
+    width: 800px;
+    margin-left: 100px;
+    /*padding-left: 100px;*/
+    /*padding-right: 100px;*/
+}
