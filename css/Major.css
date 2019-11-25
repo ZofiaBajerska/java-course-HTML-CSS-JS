@@ -12,15 +12,14 @@ body {
 
 header {
     background-image: url("../jpg/hmm.jpg");
-    background-size: auto;
+    /*background-size: auto;*/
     height: 257px;
 }
-
-.login {
-    justify-content: right;
-    padding-left: 200px;
+#login {
+    position: absolute;
+    padding-top: 230px;
     padding-bottom: 0px;
-    padding-top: 210px;
+    padding-left: 430px;
 }
 
 .hidden {

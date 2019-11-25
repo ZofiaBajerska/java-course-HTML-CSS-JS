@@ -10,11 +10,10 @@ window.onload = function () {
 function fetchGoblin(id) {
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function (qualifiedName, value) {
+
         let goblin = JSON.parse(this.responseText);
         document.getElementById("name").setAttribute("value", goblin.name);
-        // alert(goblin.name)
         document.getElementById("age3").value = goblin.age;
-        // alert(goblin.age)
 
     };
     xhttp.open("GET", "http://localhost:8080/api/goblins/" + id, true);

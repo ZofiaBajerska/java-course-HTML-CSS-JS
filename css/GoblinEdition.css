@@ -31,13 +31,16 @@
     grid-gap: 20px;
     padding-top: 20px;
 }
-.tawdol{
+.tawdol {
     padding-top: 10px;
 }
 
 .tamten {
     width: 100px;
-    padding-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 440px;
+
 }
 tbody tr:nth-child(odd) {
     background-color: crimson;
