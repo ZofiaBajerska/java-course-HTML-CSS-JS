@@ -26,7 +26,6 @@
     margin-left: 50px;
     width: 100px;
 }
-
 .grid {
     display: grid;
     grid-gap: 20px;
@@ -36,6 +35,10 @@
     padding-top: 10px;
 }
 
+.tamten {
+    width: 100px;
+    padding-top: 10px;
+}
 tbody tr:nth-child(odd) {
     background-color: crimson;
 }

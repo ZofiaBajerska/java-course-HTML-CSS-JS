@@ -10,13 +10,11 @@ window.onload = function () {
 function fetchGoblin(id) {
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function (qualifiedName, value) {
-        // alert(this.readyState +"" +this.status)
-        // if (this.readyState === 4 && this.status === 200) {
-            let goblin = JSON.parse(this.responseText);
-            document.getElementById("name").setAttribute("value", goblin.name);
-            alert(goblin.name)
+        let goblin = JSON.parse(this.responseText);
+        document.getElementById("name").setAttribute("value", goblin.name);
+        // alert(goblin.name)
         document.getElementById("age3").value = goblin.age;
-        alert(goblin.age)
+        // alert(goblin.age)
 
     };
     xhttp.open("GET", "http://localhost:8080/api/goblins/" + id, true);
@@ -26,10 +24,9 @@ function fetchGoblin(id) {
 
 function fetchWeapons(id) {
 
-alert(id)
+    // alert(id)
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
-        // alert(this.readyState +"" +this.status)
         if (this.readyState === 4 && this.status === 200) {
             let weapons = JSON.parse(this.responseText);
             populateWeapons(weapons);
@@ -39,6 +36,7 @@ alert(id)
     xhttp.setRequestHeader("accept", "application/json");
     xhttp.send();
 }
+
 function populateWeapons(weapons) {
     let tbody = document.getElementById("weaponBody");
 

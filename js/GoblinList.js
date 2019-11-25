@@ -6,7 +6,7 @@ window.onload = function () {
 function fetchGoblins() {
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
-        // alert(this.readyState +"" +this.status)
+
         if (this.readyState === 4 && this.status === 200) {
             let goblins = JSON.parse(this.responseText);
             populateGoblins(goblins);
@@ -67,14 +67,12 @@ function editGoblin(name, id) {
 
 
 function deleteGoblin(name, id) {
-    alert(name);
-    alert(id);
+
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
             clearGoblins();
             fetchGoblins();
-            alert("cos");
         }
     };
     xhttp.open("DELETE", "http://localhost:8080/api/goblins/" + id, true);
