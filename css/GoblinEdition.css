@@ -1,6 +1,39 @@
+.twoColumns1 {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-gap: 10px;
+}
+
+.editGoblin {
+    padding: 20px;
+    *position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: darkslateblue;
+    width: 300px;
+
+}
+
+.editGoblinFull {
+    width:220px;
+    margin: auto;
+}
+
+.ten {
+    margin-left: 50px;
+    width: 100px;
+}
+
 .grid {
     display: grid;
     grid-gap: 20px;
+    padding-top: 20px;
+}
+.tawdol{
+    padding-top: 10px;
 }
 
 tbody tr:nth-child(odd) {
@@ -41,5 +74,4 @@ th {
 table {
     width: 800px;
     margin-left: 100px;
-
 }

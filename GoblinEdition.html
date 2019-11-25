@@ -5,7 +5,9 @@
         <meta name="author" content="Zofia B.">
         <meta name="keywords" content="Goblins">
         <link rel="stylesheet" href="css/Major.css">
+        <link rel="stylesheet" href="css/GoblinEdition.css">
         <script src="js/MainPage.js"></script>
+        <script src="js/GoblinEdition.js"></script>
         <title>GoblinEdition</title>
         <script src="https://kit.fontawesome.com/c970a7475a.js" crossorigin="anonymous"></script>
     </head>
@@ -32,10 +34,34 @@
                     <li><i class="fas fa-user-plus"></i> <a href="GoblinAdd.html">Add Goblin</a></li>
                 </ul>
             </nav>
-            <article>
-                Po co zmieniać gobliny? Takie sa cudowne!
+            <section>
+                <div class="editGoblin" id="editGoblin">
+                    <div class=" editGoblinFull">
+                        <form class="twoColumns1">
+                            <label for="name">Name</label>
+                            <input id="name"/>
+                            <label for="age3">Age</label>
+                            <input id="age3"/>
+                            <button class="ten" id="add_btn" onclick="editionGoblin()">Save</button>
+                        </form>
+                    </div>
+                </div>
 
-            </article>
+            </section>
+            <section class="tawdol">
+                <table>
+                    <caption><b>Lista Broni</b></caption>
+                    <thead>
+                        <tr><th>NAME</th><th>POWER</th><th>REMOVE</th></tr>
+
+                    </thead>
+                    <tbody id="weaponBody">
+
+
+                    </tbody>
+                </table>
+
+            </section>
             <footer id="footer" style="clear: right ">
                 &copy; Zofia B. Strona o goblinach. <br>
                 Grafiki wykorzystane przy stronie są częścią projektu:

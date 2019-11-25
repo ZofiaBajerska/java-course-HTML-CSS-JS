@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/Major.css">
         <link rel="stylesheet" href="css/GoblinAdd.css">
         <script src="js/MainPage.js"></script>
+        <script src="js/GoblinAdd.js"></script>
         <title>GoblinAdd</title>
         <script src="https://kit.fontawesome.com/c970a7475a.js" crossorigin="anonymous"></script>
     </head>
@@ -33,28 +34,20 @@
                     <li><i class="fas fa-user-plus"></i> <a href="GoblinAdd.html">Add Goblin</a></li>
                 </ul>
             </nav>
+
             <section>
-                <form>
-                    <fieldset>
-                        <div class="grid">
+                <div class="newGoblin" id="addGoblin">
+                <div class=" newGoblinFull">
+                    <form class="twoColumns">
+                        <label for="name2">Name</label>
+                        <input id="name2"/>
+                        <label for="age2">Age</label>
+                        <input id="age2"/>
+                        <button class="ten" id="add_btn" onclick="addGoblin()">Add</button>
+                   </form>
+                </div>
+    </div>
 
-                            <label for="name">NAME</label>
-                            <input id="name" type="text"/>
-
-                            <label for="age">age</label>
-                            <input id="age" type="text"/>
-
-                            <label for="weapon">weapon</label>
-                            <input id="weapon" type="text"/>
-
-<!--                            <label for="price">price</label>-->
-<!--                            <input id="price" type="text"/>-->
-
-                            <button onclick="addExpenses();return false">Dodaj</button>
-
-                        </div>
-                    </fieldset>
-                </form>
             </section>
             <footer id="footer" style="clear: right ">
                 &copy; Zofia B. Strona o goblinach. <br>

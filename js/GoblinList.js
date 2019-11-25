@@ -62,28 +62,28 @@ function populateGoblins(goblins) {
 }
 
 function editGoblin(name, id) {
-    // let xhttp = new XMLHttpRequest();
-    // xhttp.open("GET", "http://localhost:8080/api/goblins/" + id, true);
-    // xhttp.setRequestHeader("accept", "application/json");
-    // xhttp.send();
-    window.location.href = "GoblinEdition.html?" + id;
+    window.location.href = "GoblinEdition.html?id=" + id;
 }
 
 
 function deleteGoblin(name, id) {
-alert(name);
-alert(id);
+    alert(name);
+    alert(id);
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
-        // if (this.readyState === 4 && this.status === 200) {
+        if (this.readyState === 4 && this.status === 200) {
             clearGoblins();
             fetchGoblins();
             alert("cos");
-        // }
+        }
     };
     xhttp.open("DELETE", "http://localhost:8080/api/goblins/" + id, true);
-    xhttp.setRequestHeader("accept", "application/json");
-    xhttp.send();
+    if (atob(window.localStorage.getItem('auth')) === ("admin:admin")) {
+        xhttp.setRequestHeader("Authorization", "Basic YWRtaW46YWRtaW4=");
+        xhttp.send();
+    } else {
+        alert("You have to be logged as admin");
+    }
 }
 function clearGoblins() {
     let tbody = document.getElementById("goblinsBody");
